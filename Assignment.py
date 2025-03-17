@@ -21,7 +21,7 @@ def scrape_news():
     
 def create_csv(data):
     df = pd.DataFrame(data)
-    df.to_csv("NewData.csv")
+    df.to_csv("Data.csv")
     print("File is saved as a CSV File")
     answer = df.head(5)
     return answer
